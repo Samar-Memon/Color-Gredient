@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Gradient Color</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="gradient-box"></div> <!--gradient-box-->
+        <div class="row options">
+        <div class="column direction">
+            <p>Direction</p>
+            <div class="select-box">
+                <select>
+                    <option value="to top">Top</option>
+                    <option value="to right top">Right Top</option>
+                    <option value="to right">Right</option>
+                    <option value="to right bottom">Right Bottom</option>
+                    <option value="to bottom">Bottom</option>
+                    <option value="to left bottom">Left Bottom</option>
+                    <option value="to left">Left</option>
+                    <option value="to left top" selected>Left Top</option>
+                </select>
+            </div> <!--select-box-->
+        </div> <!--column direction-->
+        <div class="column colors">
+            <p>Colors</p>
+            <div class="inputs">
+                <input type="color" value="#3196d5">
+                <input type="color" value="#8a6cff">
+            </div>
+        </div> <!--column colors-->
+        </div> <!--row options-->
+        <div class="row textarea" disabled><p>background: linear-gradient(to left top, #3196d5, #8a6cff);</p></div>
+        <div class="row buttons">
+            <button class="copy">Copy Code</button>
+        </div> <!--row buttons-->
+    </div> <!--wrapper-->
+
+    <script src="./app.js"></script>
+</body>
+</html>
